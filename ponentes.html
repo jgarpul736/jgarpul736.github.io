@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFest</title>
+  <link rel="icon" type="image/jpg" href="./img/logo.jpg">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
+  <!-- HEADER -->
+  <header class="header-blue text-white">
+
+    <nav class="navbar navbar-expand-lg bg-primary py-3">
+      <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center text-white text-decoration-none" href="./index.html">
+          <img src="./img/logo.jpg" alt="Logo TechFest" width="45" height="45" class="rounded-circle me-2">
+          <span class="fw-bold fs-4">TechFest</span>
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#menuOffcanvas">
+          <i class="bi bi-list" style="font-size: 1.8rem;"></i>
+        </button>
+
+        <!-- Menú normal -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item"><a class="nav-link text-white m-2" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-white m-2" href="./actividades.html">Actividades</a></li>
+            <li class="nav-item"><b><a class="nav-link text-white m-2" href="./ponentes.html">Ponentes</a></b></li>
+            <li class="nav-item"><a class="nav-link text-white m-2" href="./contacto.html">Contacto</a></li>
+          </ul>
+
+          <!-- Buscador -->
+          <form class="d-flex">
+            <input class="form-control form-control-sm rounded-pill px-3" type="search" placeholder="Buscar...">
+            <!-- Esto lo he pillado de w3schools lo del rounded pill-->
+          </form>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- El offcanvas también lo he codigo de w3schools-->
+    <div class="offcanvas offcanvas-start" id="menuOffcanvas">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title fw-bold">Menú</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./actividades.html">Actividades</a></li>
+          <li class="nav-item"><b><a class="nav-link" href="./ponentes.html">Ponentes</a></b></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        </ul>
+
+        <hr>
+
+        <form class="d-flex mt-3">
+          <input class="form-control form-control-sm" type="search" placeholder="Buscar...">
+        </form>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="container my-5">
+    <!-- Presentación ponentes: ancho limitado para lectura -->
+    <!-- Uso de .container aquí para centrar el texto y que sea legible -->
+    <section class="mb-5">
+      <h1 class="display-6 fw-bold text-center">Ponentes</h1>
+      <p class="lead text-center">Conoce a los expertos que impartirán charlas y talleres en TechFest 2025.</p>
+    </section>
+
+    <!-- Grid de ponentes: uso filas y columnas adaptativas -->
+    <!-- He pillado .row y col-sm/col-md para que en móvil muestre 1 por fila, en tablet 2 y en pantallas grandes 3 -->
+    <section class="mb-5">
+      <div class="row g-4">
+        <!-- Ponente 1 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="./img/maria.avif" class="card-img-top img-thumbnail rounded-circle p-3" alt="Foto Ponente 1">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">María López</h5>
+              <p class="mb-1"><small class="text-muted">Edad: 32</small></p>
+              <p class="card-text">Ingeniera de datos con 8 años de experiencia en ML y pipelines de datos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ponente 2 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="./img/carlos.jpg" class="card-img-top img-thumbnail rounded-circle p-3" alt="Foto Ponente 2">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Carlos Ruiz</h5>
+              <p class="mb-1"><small class="text-muted">Edad: 40</small></p>
+              <p class="card-text">Especialista en ciberseguridad y auditorías de redes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ponente 3 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="./img/lucia.jpg" class="card-img-top img-thumbnail rounded-circle p-3" alt="Foto Ponente 3">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Lucía Martín</h5>
+              <p class="mb-1"><small class="text-muted">Edad: 28</small></p>
+              <p class="card-text">Diseñadora UX con proyectos internacionales y enfoque en accesibilidad.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ponente 4 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="./img/diego.jpg" class="card-img-top img-thumbnail rounded-circle p-3" alt="Foto Ponente 4">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Diego Fernández</h5>
+              <p class="mb-1"><small class="text-muted">Edad: 35</small></p>
+              <p class="card-text">Desarrollador Full Stack especializado en arquitectura web moderna.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ponente 5 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="./img/ana.jpg" class="card-img-top img-thumbnail rounded-circle p-3" alt="Foto Ponente 5">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Ana Torres</h5>
+              <p class="mb-1"><small class="text-muted">Edad: 30</small></p>
+              <p class="card-text">Ingeniera en Robótica con enfoque en automatización industrial y STEM.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ponente 6 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="./img/sofia.jpg" class="card-img-top img-thumbnail rounded-circle p-3" alt="Foto Ponente 6">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Sofía Hernández</h5>
+              <p class="mb-1"><small class="text-muted">Edad: 34</small></p>
+              <p class="card-text">Científica de datos enfocada en visualización y análisis predictivo.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Tabla: uso de table-striped para poner los ponentes -->
+    <section class="mb-5">
+      <h2 class="h5 fw-bold mb-3">Resumen de Ponentes</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Especialidad</th>
+              <th>Contacto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>María López</td>
+              <td>32</td>
+              <td>Ingeniería de datos / ML</td>
+              <td>maria@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>Carlos Ruiz</td>
+              <td>40</td>
+              <td>Ciberseguridad</td>
+              <td>carlos@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>Lucía Martín</td>
+              <td>28</td>
+              <td>Diseño UX</td>
+              <td>lucia@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>Diego Fernández</td>
+              <td>35</td>
+              <td>Desarrollo Web Full Stack</td>
+              <td>diego@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>Ana Torres</td>
+              <td>30</td>
+              <td>Robótica y Automatización</td>
+              <td>ana@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>Sofía Hernández</td>
+              <td>34</td>
+              <td>Ciencia de Datos y Visualización</td>
+              <td>sofia@gmail.com</a></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+    <footer class="footer-dark text-white">
+        <div class="container-fluid m-0">
+
+            <div class="row align-items-center m-0">
+
+                <!-- Enlaces legales -->
+                <div class="col-md-8 text-center text-md-start m-0">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-link text-white text-decoration-none">AVISO LEGAL</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-link text-white text-decoration-none">PRIVACIDAD</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-link text-white text-decoration-none">COOKIES</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-md-4 text-center text-md-end m-0">
+                    <a href="#" class="social-link text-white me-3"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-link text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-link text-white me-3"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-link text-white"><i class="bi bi-facebook"></i></a>
+                </div>
+
+            </div>
+
+            <div class="row border-top border-light m-0">
+                <div class="col-12 text-center small"><br>
+                    &copy; 2025 <strong>Todos los derechos reservados</strong>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFest</title>
+  <link rel="icon" type="image/jpg" href="./img/logo.jpg">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <!-- Uso un contenedor con un ancho completo -->
+  <header class="header-blue text-white" style="background: linear-gradient(180deg, #0d6efd 0%, #007bff 60%, #0dcaf0 100%);">
+
+    <!-- NAV -->
+     <!-- Estoy usando un container para que esté centrado-->
+    <nav class="navbar navbar-expand-lg bg-primary py-3">
+        <div class="container">
+
+            <!-- Logo, alineo la imagen y el texto don el display flex -->
+            <a class="navbar-brand d-flex align-items-center text-white text-decoration-none" href="./index.html">
+                <img src="./img/logo.jpg" alt="Logo TechFest" width="45" height="45" class="rounded-circle me-2">
+                <span class="fw-bold fs-4">TechFest</span>
+            </a>
+
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#menuOffcanvas">
+                <i class="bi bi-list" style="font-size: 1.8rem;"></i>
+            </button>
+
+            <!-- Menú normal -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><b><a class="nav-link text-white m-2" href="./index.html">Inicio</a></b></li>
+                    <li class="nav-item"><a class="nav-link text-white m-2" href="./actividades.html">Actividades</a></li>
+                    <li class="nav-item"><a class="nav-link text-white m-2" href="./ponentes.html">Ponentes</a></li>
+                    <li class="nav-item"><a class="nav-link text-white m-2" href="./contacto.html">Contacto</a></li>
+                </ul>
+
+                <!-- Buscador -->
+                <form class="d-flex">
+                    <input class="form-control form-control-sm rounded-pill px-3" type="search" placeholder="Buscar...">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-start" id="menuOffcanvas">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title fw-bold">Menú</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><b><a class="nav-link m-2" href="./index.html">Inicio</a></b></li>
+                <li class="nav-item"><a class="nav-link m-2" href="./actividades.html">Actividades</a></li>
+                <li class="nav-item"><a class="nav-link m-2" href="./ponentes.html">Ponentes</a></li>
+                <li class="nav-item"><a class="nav-link m-2" href="./contacto.html">Contacto</a></li>
+            </ul>
+            <hr>
+            <form class="d-flex mt-3">
+                <input class="form-control form-control-sm" type="search" placeholder="Buscar...">
+            </form>
+        </div>
+    </div>
+
+
+    <!-- HERO -->
+     <!-- Uso contenedor centrado -->
+    <section class="text-center py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Bienvenidos a TechFest</h1>
+            <p class="lead mb-4">
+                La feria tecnológica donde la innovación, el aprendizaje y el futuro se encuentran.
+            </p>
+
+            <a href="./actividades.html" class="btn btn-light btn-lg fw-bold px-4">Ver actividades</a>
+
+            <!-- Imagen -->
+            <div class="mt-5">
+                <img src="./img/fotoferia.webp" alt="Imagen evento TechFest" class="img-fluid w-100 rounded shadow"
+                    style="max-width: 800px;">
+            </div>
+        </div>
+    </section>
+
+</header>
+
+
+
+
+  <!-- MAIN -->
+  <main class="container my-5">
+
+ <!-- PRESENTACIÓN -->
+    <section class="text-center py-5"
+      style="background: linear-gradient(180deg, #0d6efd 0%, #007bff 60%, #0dcaf0 100%);">
+      <div class="container">
+        <h1 class="display-5 fw-bold mb-3 text-white">¿Qué es?</h1>
+        <p class="lead mb-4 text-white">
+          TechFest es una feria tecnológica que reúne a las empresas más innovadoras de España.
+          Un punto de encuentro para estudiantes, profesionales y entusiastas de la tecnología,
+          con charlas, talleres, demostraciones y oportunidades de networking.
+        </p>
+
+
+        <!-- Esto es un collapsible que he cogido de w3schools-->
+        <div class="container mt-3">
+          <a href="#info" class="btn btn-light btn-lg fw-bold" data-bs-toggle="collapse">Más información</a>
+          <div id="info" class="collapse mt-3 text-white fw-light">
+            TechFest es un evento pensado para conectar a estudiantes, profesionales y empresas del sector
+            tecnológico.
+            Durante la feria podrás:
+            <br><br>
+            • Asistir a charlas impartidas por expertos en innovación.<br>
+            • Participar en talleres prácticos de programación, robótica y ciberseguridad.<br>
+            • Descubrir proyectos reales desarrollados por empresas punteras.<br>
+            • Conocer nuevas oportunidades de formación y empleo en el ámbito tecnológico.<br>
+            • Hacer networking con personas que comparten tus mismos intereses.
+            <br><br>
+            ¡Una oportunidad perfecta para aprender, inspirarte y formar parte del futuro tecnológico!
+          </div>
+
+        </div>
+
+
+        <div class="mt-5">
+          <img src="./img/feria.jpg" alt="Imagen evento TechFest" class="img-fluid w-100 rounded shadow"
+            style="max-width: 800px;"> <!-- El w-100 es para qu siemrpe ocupe el 100% disponible-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Empresas que van -->
+     <!-- Uso grid, para que se adapte a varios tamñaos -->
+    <section id="empresas" class="my-5">
+      <h2 class="fw-bold text-center mb-4">Empresas participantes</h2>
+      <div class="row g-4">
+
+        <!-- Indra -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="./img/indra.webp" class="card-img-top p-4" alt="Foto Indra">
+            <div class="card-body text-center">
+              <h3 class="card-title h5 text-primary text-center">Indra</h3>
+              <p class="card-text">Una de las mayores empresas tecnológicas y de consultoría en Europa,
+                especializada en
+                defensa, transporte, energía y transformación digital.</p>
+              <a href="https://www.indracompany.com/" class="btn btn-outline-primary btn-sm">Visitar
+                sitio</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Innovasur -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="./img/innovasur.png" class="card-img-top p-4" alt="Foto Innovasur">
+            <div class="card-body text-center">
+              <h3 class="card-title h5 text-primary text-center">Innovasur</h3>
+              <p class="card-text">Innovasur impulsa la transformación digital de las empresas y las
+                administraciones
+                públicas. Procesos de transformación digital centrados en las personas..</p>
+              <a href="https://www.innovasur.com/" class="btn btn-outline-primary btn-sm">Visitar
+                sitio</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telefónica Tech -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="./img/telefonica.png" class="card-img-top p-4" alt="Foto Telefónica Tech">
+            <div class="card-body text-center">
+              <h3 class="card-title h5 text-primary text-center">Telefónica Tech</h3>
+              <p class="card-text">Es una división tecnológica de Telefónica especializada en
+                ciberseguridad, cloud, IoT
+                y big data, impulsando la transformación digital.</p>
+              <a href="https://telefonicatech.com/" class="btn btn-outline-primary btn-sm">Visitar
+                sitio</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kyndryl -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="./img/kyndryl.png" class="card-img-top p-4" alt="Foto Lyndryl">
+            <div class="card-body text-center">
+              <h3 class="card-title h5 text-primary text-center">Kyndryl</h3>
+              <p class="card-text">Es un proveedor de servicios de infraestructura de IT multinacional,
+                creado a partir
+                de la escisión del negocio de servicios de infraestructura de IBM en 2021.</p>
+              <a href="https://www.kyndryl.com/es/es" class="btn btn-outline-primary btn-sm align-items-center">Visitar
+                sitio</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Patrocinadores -->
+    <section id="perfil" class="text-center mt-5">
+      <h2 class="fw-bold mb-4">Patrocinadores</h2>
+      <div class="container">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center align-items-center">
+          <div class="col">
+            <img src="./img/patro1.png" class="img-fluid" alt="Foto Patrocinador">
+          </div>
+          <div class="col">
+            <img src="./img/patro4.png" class="img-fluid" alt="Foto Patrocinador">
+          </div>
+          <div class="col">
+            <img src="./img/patro3.png" class="img-fluid" alt="Foto Patrocinador">
+          </div>
+          <div class="col">
+            <img src="./img/patro4.png" class="img-fluid" alt="Foto Patrocinador">
+          </div>
+          <div class="col">
+            <img src="./img/patro5.png" class="img-fluid" alt="Foto Patrocinador">
+          </div>
+          <div class="col">
+            <img src="./img/patro6.png" class="img-fluid" alt="Foto Patrocinador">
+          </div>
+          <div class="col">
+            <img src="./img/patro7.png" class="img-fluid" alt="Foto Patrocinador">
+          </div>
+          <div class="col">
+            <img src="./img/patro8.png" class="img-fluid" alt="Foto Patrocinador">
+          </div>
+          <div class="col">
+            <img src="./img/patro1.png" class="img-fluid" alt="Foto Patrocinador">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+<!-- FOOTER -->
+ <!-- Uso container-fulid para que ocupe todo el ancho, y sin padding interno-->
+    <footer class="footer-dark text-white">
+        <div class="container-fluid m-0">
+
+            <div class="row align-items-center m-0">
+
+                <!-- Enlaces legales -->
+                <div class="col-md-8 text-center text-md-start m-0">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-link text-white text-decoration-none">AVISO LEGAL</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-link text-white text-decoration-none">PRIVACIDAD</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-link text-white text-decoration-none">COOKIES</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-md-4 text-center text-md-end m-0">
+                    <a href="#" class="social-link text-white me-3"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-link text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-link text-white me-3"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-link text-white"><i class="bi bi-facebook"></i></a>
+                </div>
+
+            </div>
+
+            <div class="row border-top border-light m-0">
+                <div class="col-12 text-center small"><br>
+                    &copy; 2025 <strong>Todos los derechos reservados</strong>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+    <!-- Para los iconos de las rrss -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+
+</html>
