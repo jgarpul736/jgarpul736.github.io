@@ -1,0 +1,52 @@
+.footer-dark {
+  background: linear-gradient(180deg, #0d6efd 0%, #007bff 60%, #0dcaf0 100%);
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+}
+
+footer p {
+  color: #f8f9fa;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+/* Barra de buscar **/
+#buscar {
+  display: inline-block;
+  border-radius: 50px;
+  overflow: hidden;
+  background: white;
+  padding: 0 10px;
+  border: 2px solid rgba(255,255,255,0.5);
+  transition: 0.3s;
+}
+
+#buscar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000;
+  width: 130px;
+}
+
+
+.bi bi-list m{
+  margin-left: 50px;
+}
