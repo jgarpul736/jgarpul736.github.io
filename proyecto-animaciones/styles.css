@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: "BBH Sans Bogle", sans-serif;
+    background: #f2f2f2;
+}
+
+header {
+    text-align: center;
+    background: #fff;
+    padding: 0px 20px 20px 20px;
+}
+
+/* Animacion de que aparezca y desaparezca según suba o baje */
+@keyframes scale-up {
+    to { scale: 1.5; }
+}
+
+@keyframes fade-away {
+    to { opacity: 0; }
+}
+
+section {
+    view-timeline: --scroll;
+}
+
+
+h2 span:first-child {
+    animation: fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range: exit 20% exit 90%;
+}
+
+h2 span:last-child {
+    animation: 
+        scale-up both ease-in-out,
+        fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range: 
+        exit 0% exit 100%,
+        exit 50% exit 90%;
+}
+
+
+
+/* Para la animación por pasos */
+#animacion-steps {
+    margin-top: 40px;
+}
+
+.parpadeo {
+    font-size: 3rem;
+    color: #003974;
+    margin: 0 auto;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Para el logo*/
+.logo-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.logo-giratorio {
+    height: 100%;
+    animation: girar 6s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Para el menú */
+.menu {
+    background: #00529F;
+}
+
+.menu details summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.menu details[open] summary {
+    background: #003974;
+}
+
+.menu details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu details[open] ul {
+    display: block;
+    background: #003974;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    background: #ffdf00;
+    color: #003974;
+}
+
+/* Para el párrafo sobre la info del madrid */
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+/* Para la imagen del main */
+#historia img {
+    width: 80%;
+    border-radius: 12px;
+    filter: blur(10px);
+    transition: filter 0.5s ease;
+}
+
+#historia img:hover {
+    filter: blur(0);
+}
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Para el apartado sobre los jugadores */
+.jugadores {
+    padding: 40px 20px;
+}
+
+.cards-jugadores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.jugador {
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.jugador img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.jugador:hover {
+    transform: scale(1.1);
+}
+
+.jugador p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #00529f;
+    color: white;
+    margin-top: 2rem;
+}
