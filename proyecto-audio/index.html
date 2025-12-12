@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de audio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./script/script.js" defer></script>
+</head>
+<body>
+  <div class="contenedor">
+
+    <header>
+      <div class="marca">
+        <div>
+          <h1 class="titulo">Reproductor de audio</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="tarjeta tarjeta-reproductor">
+        <div class="reproductor-superior">
+          
+          <div class="reproduciendo-ahora">
+            <div class="info-pista">
+              <p class="titulo-pista">Ninguna canción seleccionada</p>
+            </div>
+          </div>
+
+          <audio id="reproductor-audio" controls preload="metadata"> <!-- Aquí utilizo lo del controls y lo del preload -->
+            <source id="fuente-audio" src="audio/nada" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+
+          <div class="lista-reproduccion">
+            <button class="pista" data-src="audio/Aylex-Stylish.mp3" data-title="Aylex - Stylish"><h4>Aylex - Stylish</h4></button>
+            <button class="pista" data-src="audio/HiLau-DesertBlaze.mp3" data-title="HiLau - Desert Blaze"><h4>HiLau - Desert Blaze</h4></button>
+            <button class="pista" data-src="audio/LukeBergs-Aurora.mp3" data-title="Luke Bergs - Aurora"><h4>Luke Bergs - Aurora</h4></button>
+            <button class="pista" data-src="audio/N3X-TellMe.mp3" data-title="N3X - Tell Me"><h4>N3X - Tell Me</h4></button>
+            <button class="pista" data-src="audio/Nebulite-FeelAlive.mp3" data-title="Nebulite - Feel Alive"><h4>Nebulite - Feel Alive</h4></button>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="tarjeta pie">
+        <p>Canciones descargadas en: <a class="enlace" href=https://freetouse.com/music>Free house music for videos</a></p>
+        <p>&copy; Jesús García Pulido - Todos los derechos reservados</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
