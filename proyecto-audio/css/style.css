@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f1724;
+  color: #ffd166;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  margin-top: 100px;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 700px;
+}
+
+
+h1,
+h4 {
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+}
+
+.tarjeta {
+  background: #0b2940;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+audio {
+  width: 100%;
+}
+
+.lista-reproduccion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.pista {
+  padding: 12px;
+  background: #0b2940;
+  color: #ffd166;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pista.activo {
+  background: rgba(255, 209, 102, 0.2);
+  border-color: #ffd166;
+}
+
+.pie {
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.enlace {
+  color: #ffd166;
+  text-decoration: none;
+}
